@@ -22,7 +22,7 @@
       bags, and everyday essentials to elevate any look. Trend-forward pieces meet timeless classics,
       perfect for adding a personal touch to every outfit.
     </p>
-    <div> class="best_seller"
+    <div class="best_seller">
       <h2>Our best seller</h2>
       <section class="products">
         <article class="product">
@@ -45,6 +45,34 @@
       </section>
     </div>
   </main>
+
+  <script>
+    const container = document.querySelector(".products")
+    let autoScroll;
+    const scrollStep = 320;
+    const intervalTime = 2500;
+
+    function startScroll() {
+      autoScroll = setInterval(() => {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        if (container.scrollLeft >- maxScroll - 50) {
+          container.scrollTo({left: 0, behavior:"smooth"})
+        } else {
+          container.scrollBy({left: scrollStep, behavior: "smooth"})
+        }
+    }, intervalTime)
+    }
+
+    function stopScroll(){
+
+    }
+
+    container.addEventListener("mouseenter", stopScroll)
+    container.addEventListener("mouseleave", startScroll)
+
+  </script>
+
+
   <footer>
     <p>Contact us at 013 473 6777</p>
     <p>Email us at woedifier@gmail.com</p>
