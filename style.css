@@ -102,4 +102,91 @@ main > p {
     object-position: center;
 }
 
+/* footer */
+footer{
+    background-color: #333 ;
+    color: #fff;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+footer a {
+    color: cyan;
+}
+
+footer p{
+    margin : 10px 0;
+    font-size: 0.9rem;
+}
+
+
 /* About */
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px 80px;
+}
+
+.about-store{
+    background-color: #fff;
+    border-bottom: solid 1px #333;
+}
+
+.about-founder{
+    background-color: #f9f9f9;
+}
+
+.container h2{
+    color:brown;
+}
+
+.container p{
+    font-size : 1.1rem;
+    color: #555;
+}
+
+
+/* Gallery */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 40px 5%;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 24px;
+}
+
+
+.gallery aricle:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%
+}
+
+.gallery article{
+    /* opacity: 0;*/
+    transform: translateY(30px);
+    transition: opacity 0.8 ease-out, transform 0.8s ease-out, filter 0.3s ease;
+}
+
+.gallery article.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery:hover article{
+    filter: grayscale(0.5) brightness(0.7);
+}
+
+.gallery article:hover{
+    filter: grayscale(0) brightness(1);
+    transform: scale(0.9);
+    z-index: 10;
+}
