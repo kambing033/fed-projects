@@ -171,9 +171,9 @@ footer p{
 }
 
 .gallery article{
-    /* opacity: 0;*/
+    opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8 ease-out, transform 0.8s ease-out, filter 0.3s ease;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.3s ease;
 }
 
 .gallery article.visible{

@@ -4,60 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel = "stylesheet" href="../style.css">
 </head>
 
   <header>
     <nav>
         <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
+        <a href="./about.html">About</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./contact.html">Contact</a>
     </nav>
   </header>  
 
 <body>
-    <h1>about our store</h1>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Us - Accessories Store</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-  <footer>
-    <p>Contact us at 013 473 6777</p>
-    <p>Email us at woedifier@gmail.com</p>
-    <div class="social">
-      <a href="">Whatsapp</a>
-      <a href="">Facebook</a>
-      <a href="">Instagram</a>
-    </div>
-    <p>2026 Accessories Store </p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () =>{
-        const galleryItems = document.querySelectorAll(".gallery article")
-
-        const revealOnScroll = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry=>{
-                if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target)
-                }
-            
-            })
-        }, {threshold: 0.1})
-
-        galleryItems.forEach(item => {
-            revealOnScroll.observe(item);
-        })
-    })
-
-  </script>
-<body>
-
     <!-- About the Store Section -->
     <section id="about-store">
         <h1>About Accessories Store</h1>
@@ -103,9 +62,37 @@
         </article>
     </section>
 
-</body>
-</html>
+  <footer>
+    <p>Contact us at 013 473 6777</p>
+    <p>Email us at woedifier@gmail.com</p>
+    <div class="social">
+      <a href="">Whatsapp</a>
+      <a href="">Facebook</a>
+      <a href="">Instagram</a>
+    </div>
+    <p>2026 Accessories Store </p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () =>{
+        const galleryItems = document.querySelectorAll(".gallery article")
+
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry=>{
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target)
+                }
+            
+            })
+        }, {threshold: 0.1})
+
+        galleryItems.forEach(item => {
+            revealOnScroll.observe(item);
+        })
+    })
+
+  </script>
 
 </body>
-
 </html>
