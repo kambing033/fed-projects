@@ -192,7 +192,6 @@ footer p{
 }
 
 .contact-grid{
-    background-color: rgb(55, 79, 99);
     display: flex;
     flex-wrap : wrap;
     gap: 40px;
@@ -201,7 +200,7 @@ footer p{
 }
 
 .contact-info, .contact-form {
-    background-color: rgb(88, 129, 143);
+    background-color: rgb(163, 187, 194);
     flex: 1;
     min-width: 320px;
     padding: 30px;
